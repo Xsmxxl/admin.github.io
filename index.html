@@ -18,45 +18,49 @@
   </head>
   <body onload="abrir(event, 'usuario'), nuevo()">
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container align-middle">
-          <div class="navbar-brand" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto">
-              <a class="nav-item nav-link tablinks mx-5" href="#" onclick="abrir(event, 'usuario'), nuevo()">
-                  <div class="row">
-                      <div class="col-sm lista">
-                          <i class="fa fa-users tam-40"></i>
-                          <p>Usuario</p>
-                      </div>
-                  </div>
-              </a>
-              <a class="nav-item nav-link tablinks mx-5" href="#" onclick="abrir(event, 'auth'), pendientesAuth()">
-                  <div class="row">
-                      <div class="col-sm lista">
-                          <i class="fa fa-check-circle tam-40"></i>
-                          <p>Validación</p>
-                      </div>
-                  </div>
-              </a>
-              <a class="nav-item nav-link tablinks mx-5" href="#" onclick="abrir(event, 'alerta')">
-                  <div class="row">
-                      <div class="col-sm lista">
-                          <i class="fa fa-exclamation-circle tam-40"></i>
-                          <p>Alertas</p>
-                      </div>
-                  </div>
-              </a>
-              <a class="nav-item nav-link tablinks mx-5" href="#" onclick="abrir(event, 'conf')">
-                  <div class="row">
-                      <div class="col-sm lista">
-                          <i class="fa fa-gear tam-40"></i>
-                          <p>Configuración</p>
-                      </div>
-                  </div>
-              </a>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top topnav" id="myTopnav">
+          <div class="navbar navbar navbar-inverser">
+              <div class="navbar-brand izq" id="navbarNavAltMarkup">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colapsado" aria-controls="colapsado" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="colapsado">
+                      <a class="nav-item tablinks mx-5" href="#" onclick="abrir(event, 'usuario'), nuevo()">
+                          <div class="row">
+                              <div class="col-sm lista">
+                                  <i class="fa fa-users tam-40"></i>
+                                  <p>Usuario</p>
+                              </div>
+                          </div>
+                      </a>
+                      <a class="nav-item nav-link tablinks mx-5" href="#" onclick="abrir(event, 'auth'), pendientesAuth()">
+                          <div class="row">
+                              <div class="col-sm lista">
+                                  <i class="fa fa-check-circle tam-40"></i>
+                                  <p>Validación</p>
+                              </div>
+                          </div>
+                      </a>
+                      <a class="nav-item nav-link tablinks mx-5" href="#" onclick="abrir(event, 'alerta')">
+                          <div class="row">
+                              <div class="col-sm lista">
+                                  <i class="fa fa-exclamation-circle tam-40"></i>
+                                  <p>Alertas</p>
+                              </div>
+                          </div>
+                      </a>
+                      <a class="nav-item nav-link tablinks mx-5" href="#" onclick="abrir(event, 'conf')">
+                          <div class="row">
+                              <div class="col-sm lista">
+                                  <i class="fa fa-gear tam-40"></i>
+                                  <p>Configuración</p>
+                              </div>
+                          </div>
+                      </a>
+                      <a href="javascript:void(0);" style="font-size:15px;" class="icon nav-item nav-link tablinks mx-5" onclick="myFunction()">&#9776;</a>
+                </div>
+              </div>
           </div>
-      </div>
     </nav>
     <!--FIN DEL NAVBAR-->
 
