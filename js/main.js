@@ -59,7 +59,7 @@ function buscador() {
 function sonLetras(evt)
 {
 	var charCode = (evt.which) ? evt.which : evt.keyCode;
-	if (charCode != 45 && charCode > 31
+	if (charCode != 46 && charCode > 31
 	&& (charCode < 48 || charCode > 57))
 	return false;
 	return true;
@@ -73,13 +73,4 @@ function sonNumeros(evt)
 	&& (charCode < 48 || charCode > 57))
 	return true;
 	return false;
-}
-
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
 }
